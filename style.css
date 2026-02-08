@@ -713,69 +713,10 @@ h1, h2, h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 2rem;
         width: 100%;
         max-width: 600px;
         margin: 0 auto;
-    }
-
-    .contact-phone {
-        text-align: center;
-        width: 100%;
-    }
-
-    .phone-label {
-        font-size: 0.85rem;
-        color: #888;
-        margin-bottom: 0.8rem;
-        letter-spacing: 0.1em;
-        font-weight: 400;
-    }
-
-    .phone-number {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.8rem;
-        padding: 1rem 2.5rem;
-        background: #fff;
-        color: var(--accent-color);
-        font-size: 1.3rem;
-        font-weight: 600;
-        font-family: var(--font-sans);
-        border-radius: 50px;
-        border: 2px solid var(--accent-color);
-        box-shadow: 0 4px 15px rgba(232, 106, 94, 0.2);
-        transition: all 0.3s;
-        letter-spacing: 0.05em;
-        width: 100%;
-    }
-
-    .phone-number:hover {
-        background: var(--accent-gradient);
-        color: #fff;
-        border-color: transparent;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(232, 106, 94, 0.35);
-    }
-
-    .phone-icon {
-        font-size: 1.5rem;
-    }
-
-    .phone-number:hover .phone-icon {
-        animation: ring 0.5s ease-in-out;
-    }
-
-    @keyframes ring {
-        0%, 100% { transform: rotate(0deg); }
-        25% { transform: rotate(-15deg); }
-        75% { transform: rotate(15deg); }
-    }
-
-    .phone-digits {
-        font-size: 1.3rem;
-        font-weight: 600;
     }
 
     .contact-button {
@@ -783,24 +724,71 @@ h1, h2, h3 {
         align-items: center;
         justify-content: center;
         gap: 0.8rem;
-        padding: 1rem 2.5rem;
+        padding: 1.2rem 3rem;
         background: var(--primary-color);
         color: #fff;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         border-radius: 50px;
         transition: all 0.3s;
         width: 100%;
         font-weight: 500;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
 
     .contact-button:hover {
         background: var(--accent-gradient);
-        transform: translateY(-2px);
+        transform: translateY(-3px);
         box-shadow: 0 8px 25px rgba(232, 106, 94, 0.35);
     }
 
     .mail-icon {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    .contact-phone {
+        text-align: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .phone-label {
+        font-size: 0.75rem;
+        color: #999;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+    }
+
+    .phone-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1.2rem;
+        background: transparent;
+        color: #888;
+        font-size: 0.95rem;
+        font-weight: 500;
+        font-family: var(--font-sans);
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        transition: all 0.3s;
+        letter-spacing: 0.02em;
+    }
+
+    .phone-number:hover {
+        background: #f9f9f9;
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    .phone-icon {
+        font-size: 1rem;
+    }
+
+    .phone-digits {
+        font-size: 0.95rem;
+        font-weight: 500;
     }
 
     /* SNS Links */
@@ -889,17 +877,17 @@ h1, h2, h3 {
     .message-card { padding: 3rem 1.5rem; }
     .counter { font-size: 3.5rem; }
     .contact-actions { max-width: 100%; }
-    .phone-number { 
-        font-size: 1.1rem; 
-        padding: 0.9rem 1.5rem;
-    }
-    .phone-digits { font-size: 1.1rem; }
-    .phone-icon { font-size: 1.3rem; }
     .contact-button {
-        font-size: 1rem;
-        padding: 0.9rem 1.5rem;
+        font-size: 1.1rem;
+        padding: 1.1rem 2rem;
     }
-    .mail-icon { font-size: 1.2rem; }
+    .mail-icon { font-size: 1.3rem; }
+    .phone-number { 
+        font-size: 0.9rem; 
+        padding: 0.5rem 1rem;
+    }
+    .phone-digits { font-size: 0.9rem; }
+    .phone-icon { font-size: 0.95rem; }
     .works-item { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
     .works-cat { width: auto; }
     .company-wrapper { padding: 2rem 1.5rem; }
